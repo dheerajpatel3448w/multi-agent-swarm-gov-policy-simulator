@@ -1,10 +1,10 @@
-<template>
+﻿<template>
   <div class="command-center">
     <!-- Navbar / Header -->
     <header class="glass-panel cc-header">
       <div class="brand-group">
         <div class="logo-pulse"></div>
-        <h1 class="telemetry-title">GovSwarm | Command Center</h1>
+        <h1 class="telemetry-title">AgentixGov | Command Center</h1>
       </div>
       <div class="status-group">
         <span class="status-indicator online"></span>
@@ -109,7 +109,7 @@
                 />
                 
                 <div v-if="files.length === 0" class="upload-empty">
-                  <div class="upload-icon">⇪</div>
+                  <div class="upload-icon">â‡ª</div>
                   <span>Initialize System Context</span>
                   <small>Drag & Drop or Click to Browse</small>
                 </div>
@@ -117,7 +117,7 @@
                 <div v-else class="file-list">
                   <div v-for="(file, index) in files" :key="index" class="file-item glass-item">
                     <span class="file-name">{{ file.name }}</span>
-                    <button @click.stop="removeFile(index)" class="remove-btn">×</button>
+                    <button @click.stop="removeFile(index)" class="remove-btn">Ã—</button>
                   </div>
                 </div>
               </div>
@@ -523,3 +523,5 @@ const startSimulation = () => {
   .cc-main { grid-template-columns: 1fr; }
 }
 </style>
+
+

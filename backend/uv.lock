@@ -1,4 +1,4 @@
-version = 1
+﻿version = 1
 revision = 3
 requires-python = ">=3.11"
 resolution-markers = [
@@ -1238,7 +1238,7 @@ wheels = [
 ]
 
 [[package]]
-name = "mirofish-backend"
+name = "agentixgov-backend"
 version = "0.1.0"
 source = { editable = "." }
 dependencies = [
@@ -3504,3 +3504,4 @@ sdist = { url = "https://files.pythonhosted.org/packages/32/c7/c835debf13302f8aa
 wheels = [
     { url = "https://files.pythonhosted.org/packages/f7/e1/bbf03c6c8007c0cb238780e7fc6d8e1a52633893933a41aa09678618985a/zep_cloud-3.13.0-py3-none-any.whl", hash = "sha256:b2fbdeef73e262194c8f67b58f76471de6ee87e1a629541a09d8f7bbf475f12b", size = 110601, upload-time = "2025-11-20T15:25:38.484Z" },
 ]
+

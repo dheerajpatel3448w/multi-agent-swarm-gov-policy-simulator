@@ -1,4 +1,4 @@
-"""
+﻿"""
 Report Agent
 LangChain + ZepReACTGenerate
 
@@ -30,7 +30,7 @@ from .zep_tools import (
     InterviewResult
 )
 
-logger = get_logger('mirofish.report_agent')
+logger = get_logger('AGENTIXGOV.report_agent')
 
 
 class ReportLogger:
@@ -353,8 +353,8 @@ class ReportConsoleLogger:
         
         #  report_agent  logger
         loggers_to_attach = [
-            'mirofish.report_agent',
-            'mirofish.zep_tools',
+            'AGENTIXGOV.report_agent',
+            'AGENTIXGOV.zep_tools',
         ]
         
         for logger_name in loggers_to_attach:
@@ -369,8 +369,8 @@ class ReportConsoleLogger:
         
         if self._file_handler:
             loggers_to_detach = [
-                'mirofish.report_agent',
-                'mirofish.zep_tools',
+                'AGENTIXGOV.report_agent',
+                'AGENTIXGOV.zep_tools',
             ]
             
             for logger_name in loggers_to_detach:

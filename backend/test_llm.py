@@ -1,8 +1,8 @@
-import os
+﻿import os
 from dotenv import load_dotenv
 
 # Load .env
-load_dotenv(r"c:\Users\patel\OneDrive\Desktop\GovernmentSkim\MiroFish\backend\.env")
+load_dotenv(r"c:\Users\patel\OneDrive\Desktop\GovernmentSkim\AgentixGov\backend\.env")
 
 from openai import OpenAI
 import json
@@ -29,3 +29,4 @@ except Exception as e:
     print("ERROR:")
     import traceback
     traceback.print_exc()
+

@@ -1,4 +1,4 @@
-"""
+﻿"""
 Graph Building Service
 2：Zep APIStandalone Graph
 """
@@ -55,7 +55,7 @@ class GraphBuilderService:
         self,
         text: str,
         ontology: Dict[str, Any],
-        graph_name: str = "MiroFish Graph",
+        graph_name: str = "AGENTIXGOV Graph",
         chunk_size: int = 500,
         chunk_overlap: int = 50,
         batch_size: int = 3
@@ -192,12 +192,12 @@ class GraphBuilderService:
     
     def create_graph(self, name: str) -> str:
         """Zep（）"""
-        graph_id = f"mirofish_{uuid.uuid4().hex[:16]}"
+        graph_id = f"AGENTIXGOV_{uuid.uuid4().hex[:16]}"
         
         self.client.graph.create(
             graph_id=graph_id,
             name=name,
-            description="MiroFish Social Simulation Graph"
+            description="AGENTIXGOV Social Simulation Graph"
         )
         
         return graph_id

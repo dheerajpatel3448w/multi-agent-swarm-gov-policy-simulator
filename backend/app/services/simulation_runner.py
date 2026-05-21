@@ -1,4 +1,4 @@
-"""
+﻿"""
 OASIS Simulation Runner
 Runs simulations in the background and records each Agent action, supports real-time status monitoring
 """
@@ -24,7 +24,7 @@ from ..utils.locale import get_locale, set_locale
 from .zep_graph_memory_updater import ZepGraphMemoryManager
 from .simulation_ipc import SimulationIPCClient, CommandType, IPCResponse
 
-logger = get_logger('mirofish.simulation_runner')
+logger = get_logger('AGENTIXGOV.simulation_runner')
 
 # Flag indicating whether cleanup function has been registered
 _cleanup_registered = False

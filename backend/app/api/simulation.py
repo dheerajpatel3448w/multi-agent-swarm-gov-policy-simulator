@@ -1,4 +1,4 @@
-"""
+﻿"""
 API
 Step2: Zep、OASIS（）
 """
@@ -17,7 +17,7 @@ from ..utils.logger import get_logger
 from ..utils.locale import t, get_locale, set_locale
 from ..models.project import ProjectManager
 
-logger = get_logger('mirofish.api.simulation')
+logger = get_logger('AGENTIXGOV.api.simulation')
 
 
 # Interview prompt 
@@ -172,7 +172,7 @@ def create_simulation():
     （JSON）：
         {
             "project_id": "proj_xxxx",      // 
-            "graph_id": "mirofish_xxxx",    // ，project
+            "graph_id": "AGENTIXGOV_xxxx",    // ，project
             "enable_twitter": true,          // ，true
             "enable_reddit": true            // ，true
         }
@@ -183,7 +183,7 @@ def create_simulation():
             "data": {
                 "simulation_id": "sim_xxxx",
                 "project_id": "proj_xxxx",
-                "graph_id": "mirofish_xxxx",
+                "graph_id": "AGENTIXGOV_xxxx",
                 "status": "created",
                 "enable_twitter": true,
                 "enable_reddit": true,
@@ -1381,7 +1381,7 @@ def generate_profiles():
     
     （JSON）：
         {
-            "graph_id": "mirofish_xxxx",     // 
+            "graph_id": "AGENTIXGOV_xxxx",     // 
             "entity_types": ["Student"],      // 
             "use_llm": true,                  // 
             "platform": "reddit"              // 

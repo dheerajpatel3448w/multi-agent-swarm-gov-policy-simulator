@@ -1,4 +1,4 @@
-"""
+﻿"""
 Report API
 、、
 """
@@ -17,7 +17,7 @@ from ..models.task import TaskManager, TaskStatus
 from ..utils.logger import get_logger
 from ..utils.locale import t, get_locale, set_locale
 
-logger = get_logger('mirofish.api.report')
+logger = get_logger('AGENTIXGOV.api.report')
 
 
 # ==============  ==============
@@ -939,7 +939,7 @@ def search_graph_tool():
     
     （JSON）：
         {
-            "graph_id": "mirofish_xxxx",
+            "graph_id": "AGENTIXGOV_xxxx",
             "query": "",
             "limit": 10
         }
@@ -987,7 +987,7 @@ def get_graph_statistics_tool():
     
     （JSON）：
         {
-            "graph_id": "mirofish_xxxx"
+            "graph_id": "AGENTIXGOV_xxxx"
         }
     """
     try:

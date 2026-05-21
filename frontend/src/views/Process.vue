@@ -1,8 +1,8 @@
-<template>
+﻿<template>
   <div class="process-page">
     <!--  -->
     <nav class="navbar">
-      <div class="nav-brand" @click="goHome">MIROFISH</div>
+      <div class="nav-brand" @click="goHome">AgentixGov</div>
       
       <!--  -->
       <div class="nav-center">

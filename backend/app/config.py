@@ -1,4 +1,4 @@
-"""
+﻿"""
 Configuration Management
 Loads configuration uniformly from the .env file in the project root directory
 """
@@ -7,7 +7,7 @@ import os
 from dotenv import load_dotenv
 
 # Load the .env file from the project root directory
-# Path: MiroFish/.env (relative to backend/app/config.py)
+# Path: AgentixGov/.env (relative to backend/app/config.py)
 project_root_env = os.path.join(os.path.dirname(__file__), '../../.env')
 
 if os.path.exists(project_root_env):
@@ -21,7 +21,7 @@ class Config:
     """Flask configuration class"""
     
     # Flask configuration
-    SECRET_KEY = os.environ.get('SECRET_KEY', 'mirofish-secret-key')
+    SECRET_KEY = os.environ.get('SECRET_KEY', 'AgentixGov-secret-key')
     DEBUG = os.environ.get('FLASK_DEBUG', 'True').lower() == 'true'
     
     # JSON configuration - disable ASCII escaping so Chinese/Unicode displays directly (not as \uXXXX)
@@ -72,3 +72,4 @@ class Config:
         if not cls.ZEP_API_KEY:
             errors.append("ZEP_API_KEY is not configured")
         return errors
+

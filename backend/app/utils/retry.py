@@ -1,4 +1,4 @@
-"""
+﻿"""
 API Call Retry Mechanism
 Handles retry logic for LLM and other external API calls
 """
@@ -9,7 +9,7 @@ import functools
 from typing import Callable, Any, Optional, Type, Tuple
 from ..utils.logger import get_logger
 
-logger = get_logger('mirofish.retry')
+logger = get_logger('AGENTIXGOV.retry')
 
 
 def retry_with_backoff(

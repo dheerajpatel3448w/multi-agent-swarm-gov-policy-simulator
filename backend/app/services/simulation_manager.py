@@ -1,4 +1,4 @@
-"""
+﻿"""
 OASIS Simulation Manager
 Manages Twitter and Reddit dual-platform parallel simulation
 Uses preset scripts + LLM to intelligently generate config parameters
@@ -19,7 +19,7 @@ from .oasis_profile_generator import OasisProfileGenerator, OasisAgentProfile
 from .simulation_config_generator import SimulationConfigGenerator, SimulationParameters
 from ..utils.locale import t
 
-logger = get_logger('mirofish.simulation')
+logger = get_logger('AGENTIXGOV.simulation')
 
 
 class SimulationStatus(str, Enum):
@@ -520,7 +520,7 @@ class SimulationManager:
                 "parallel": f"python {scripts_dir}/run_parallel_simulation.py --config {config_path}",
             },
             "instructions": (
-                f"1. 1. Activate conda environment: conda activate MiroFish\n"
+                f"1. 1. Activate conda environment: conda activate AGENTIXGOV\n"
                 f"2. Run simulation (scripts in {scripts_dir}):\n"
                 f"   -    - Run Twitter only: python {scripts_dir}/run_twitter_simulation.py --config {config_path}\n"
                 f"   -    - Run Reddit only: python {scripts_dir}/run_reddit_simulation.py --config {config_path}\n"

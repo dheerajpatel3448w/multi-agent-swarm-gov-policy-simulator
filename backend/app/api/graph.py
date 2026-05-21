@@ -1,4 +1,4 @@
-"""
+﻿"""
 API
 ，
 """
@@ -20,7 +20,7 @@ from ..models.task import TaskManager, TaskStatus
 from ..models.project import ProjectManager, ProjectStatus
 
 # 
-logger = get_logger('mirofish.api')
+logger = get_logger('AGENTIXGOV.api')
 
 
 def allowed_file(filename: str) -> bool:
@@ -337,7 +337,7 @@ def build_graph():
             project.error = None
         
         # 
-        graph_name = data.get('graph_name', project.name or 'MiroFish Graph')
+        graph_name = data.get('graph_name', project.name or 'AGENTIXGOV Graph')
         chunk_size = data.get('chunk_size', project.chunk_size or Config.DEFAULT_CHUNK_SIZE)
         chunk_overlap = data.get('chunk_overlap', project.chunk_overlap or Config.DEFAULT_CHUNK_OVERLAP)
         
@@ -377,7 +377,7 @@ def build_graph():
         # 
         def build_task():
             set_locale(current_locale)
-            build_logger = get_logger('mirofish.build')
+            build_logger = get_logger('AGENTIXGOV.build')
             try:
                 build_logger.info(f"[{task_id}] ...")
                 task_manager.update_task(
